@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/player1TurnIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="> "/>
+
+            <TextView
+                android:id="@+id/player1Name"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="X Name"/>
+
+            <TextView
+                android:id="@+id/player1Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/player2TurnIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="> "/>
+
+            <TextView
+                android:id="@+id/player2Name"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="O Name"/>
+
+            <TextView
+                android:id="@+id/player2Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:text="\?"
+                android:textColor="#aeafaf"
+                android:textSize="60dp"
+                android:onClick="onClickCard"/>
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:text="\?"
+                android:textColor="#aeafaf"
+                android:textSize="60dp"
+                android:onClick="onClickCard"/>
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:text="\?"
+                android:textColor="#aeafaf"
+                android:textSize="60dp"
+                android:onClick="onClickCard"/>
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:text="\?"
+                android:textColor="#aeafaf"
+                android:textSize="60dp"
+                android:onClick="onClickCard"/>
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:text="\?"
+                android:textColor="#aeafaf"
+                android:textSize="60dp"
+                android:onClick="onClickCard"/>
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:text="\?"
+                android:textColor="#aeafaf"
+                android:textSize="60dp"
+                android:onClick="onClickCard"/>
+
+            <Button
+                android:id="@+id/button31"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:text="\?"
+                android:textColor="#aeafaf"
+                android:textSize="60dp"
+                android:onClick="onClickCard"/>
+
+            <Button
+                android:id="@+id/button32"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:text="\?"
+                android:textColor="#aeafaf"
+                android:textSize="60dp"
+                android:onClick="onClickCard"/>
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:text="\?"
+                android:textColor="#aeafaf"
+                android:textSize="60dp"
+                android:onClick="onClickCard"/>
+
+        </GridLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encerrar partida"
+            android:onClick="onClickFinishGame"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
